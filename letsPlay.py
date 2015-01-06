@@ -58,7 +58,7 @@ while(True):
         print "  __              __                       ___ \n /\ \            /\ \__                   /\_ \ \n \ \ \         __\ \ ,_\   ____      _____\//\ \      __     __  __ \n  \ \ \  __  /'__`\ \ \/  /',__\    /\ '__`\\\\ \ \   /'__`\  /\ \/\ \ \n   \ \ \L\ \/\  __/\ \ \_/\__, `\   \ \ \L\ \\\\_\ \_/\ \L\.\_\ \ \_\ \ \n    \ \____/\ \____\\\\ \__\/\____/    \ \ ,__//\____\ \__/.\_\\\\/`____ \ \n     \/___/  \/____/ \/__/\/___/      \ \ \/ \/____/\/__/\/_/ `/___/> \ \n                                       \ \_\                     /\___/ \n                                        \/_/                     \/__/ \n  %s!" %(commonGames[randGame].name)
         print
         reroll = raw_input("Reroll? (Y/N) ")
-        if reroll == "l":
+        while reroll == "l":
             for game in commonGames:
                 print game
             reroll = raw_input("Reroll? (Y/N) ")
